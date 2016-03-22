@@ -3,7 +3,9 @@ app:
     type:     annotation
 
 #app/config/routing.yml
-
+main:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
 # FOSUserBundle's routing
 fos_user_security:
   resource: "@FOSUserBundle/Resources/config/routing/security.xml"

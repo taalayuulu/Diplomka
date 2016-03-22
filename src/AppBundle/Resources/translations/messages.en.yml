@@ -1,0 +1,23 @@
+#this translators for main page
+main:
+    title: main page
+    navbar:
+        home: Home
+        contact: Contact
+#slider on main page
+slider:
+    uni: Kyrgyz Turkish Manas University
+#About as section
+about:
+    title: About Us
+    text:   Department of Applied Mathematics and Informatics prepares specialists in applied mathematics and informatics in the field of "Software of computer technology and automated systems", "Processing of financial information." 4-year training according to the Bologna system, graduates receive a diploma with the assignment of the academic degree "Bachelor" in "Applied Mathematics and Informatics."
+
+#Tutors section
+tutor:
+    title: Our teachers
+
+#this is for contact.html.twig
+contact:
+    title: Contact
+    tema: Contact info
+
