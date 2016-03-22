@@ -1,8 +1,8 @@
 main_homepage:
     path:     /{_locale}
-    defaults: { _controller: MainBundle:Page:index , _locale: kr }
+    defaults: { _controller: AppBundle:Page:index , _locale: kr }
     requirements:
         _locale: en|kr|ru
 contact:
     path: /{_locale}/contact
-    defaults: {_controller: MainBundle:Page:contact }
+    defaults: {_controller: AppBundle:Page:contact }
