@@ -97,7 +97,17 @@ sonata_block:
 sonata_user:
   #security_acl: true # Uncomment for ACL support
   manager_type: orm # can be orm or mongodb
+  security_acl:     false
+  class:
+          user:         Application\Sonata\UserBundle\Entity\User
+          group:        Application\Sonata\UserBundle\Entity\Group
 
+  profile:  # Profile Form (firstname, lastname, etc ...)
+          form:
+              type:               sonata_user_profile
+              handler:            sonata.user.profile.form.handler.default
+              name:               sonata_user_profile_form
+              validation_groups:  [Profile]
 
 fos_user:
   db_driver:  orm # can be orm or odm
