@@ -3202,12 +3202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "9c6cde90a2003a77a43f6156569ee0d23a467824"
+                "reference": "d2c8c2bcdb4a87d32b4ac904adfafada06b1bf66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/9c6cde90a2003a77a43f6156569ee0d23a467824",
-                "reference": "9c6cde90a2003a77a43f6156569ee0d23a467824",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/d2c8c2bcdb4a87d32b4ac904adfafada06b1bf66",
+                "reference": "d2c8c2bcdb4a87d32b4ac904adfafada06b1bf66",
                 "shasum": ""
             },
             "require": {
@@ -3272,7 +3272,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2016-03-02 10:53:49"
+            "time": "2016-03-28 12:13:53"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4065,16 +4065,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v2.8.3",
+            "version": "v2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "ee8ead4f78e21ed6c873d1cc19e141949d9ed493"
+                "reference": "a967db6a4cd5d276cf849d01b29dba559e149978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/ee8ead4f78e21ed6c873d1cc19e141949d9ed493",
-                "reference": "ee8ead4f78e21ed6c873d1cc19e141949d9ed493",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/a967db6a4cd5d276cf849d01b29dba559e149978",
+                "reference": "a967db6a4cd5d276cf849d01b29dba559e149978",
                 "shasum": ""
             },
             "require": {
@@ -4116,7 +4116,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-01-21 09:24:53"
+            "time": "2016-03-23 13:45:24"
         }
     ],
     "aliases": [],
