@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     {% block head %}
         <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('bundles/app/css/animate.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/custom.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/font-awesome.min.css') }}">
     {% endblock %}
 </head>
 <body>
+{% block container %}
 <div>
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
@@ -32,8 +34,10 @@
     {% endblock fos_user_content %}
 </div>
 {% block footer %}
+    <script src="{{ asset('bundles/app/js/jquery.min.js') }}"></script>
 <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
 <scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"></scirpt>
 {% endblock  %}
+{% endblock %}
 </body>
 </html>
