@@ -2,7 +2,7 @@
 {% block head %}
     {{ parent() }}
     <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
-    <scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"> </scirpt>
+    <script src="{{ asset('bundles/app/js/jquery.min.js') }}"></script>
 {% endblock %}
 
 {% block container %}
@@ -17,7 +17,8 @@
                 <div class="page-title">
                     <div class="title_left">
                         <ul class="nav nav-tabs bar_tabs">
-                            <a href="{{ path('sonata_user_security_logout') }}">logout</a>
+                            <li><a href="{{ path('sonata_user_security_logout') }}">logout</a>
+                            </li>
                         </ul>
                         <h3>User Profile</h3>
                     </div>
