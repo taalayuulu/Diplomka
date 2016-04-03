@@ -1,6 +1,8 @@
 {% extends "SonataUserBundle::layout.html.twig" %}
 {% block head %}
     {{ parent() }}
+    <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
+    <scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"> </scirpt>
 {% endblock %}
 
 {% block container %}
@@ -286,18 +288,17 @@
     <div class="clearfix"></div>
     <div id="notif-group" class="tabbed_notifications"></div>
 </div>
+    {% block footer %}
 
-{% endblock %}
-{% block footer %}
-
-    <!-- footer content -->
-    <footer>
-        <div class="">
-            <p class="pull-right">Gentelella Alela! a Bootstrap 3 template by <a>Kimlabs</a>. |
-                <span class="lead"> <i class="fa fa-paw"></i> Gentelella Alela!</span>
-            </p>
-        </div>
-        <div class="clearfix"></div>
-    </footer>
-    {{ parent() }}
+        <!-- footer content -->
+        <footer>
+            <div class="container">
+                <p class="pull-right">Gentelella Alela! a Bootstrap 3 template by <a>Kimlabs</a>. |
+                    <span class="lead"> <i class="fa fa-paw"></i> Gentelella Alela!</span>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        {{ parent() }}
+    {% endblock %}
 {% endblock %}
