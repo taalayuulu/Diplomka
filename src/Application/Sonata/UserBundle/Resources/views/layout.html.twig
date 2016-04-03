@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('bundles/app/css/custom.css') }}">
         <link rel="stylesheet" href="{{ asset('bundles/app/css/font-awesome.min.css') }}">
-        <scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"></scirpt>
+
     {% endblock %}
 </head>
 <body>
@@ -35,9 +35,11 @@
     {% block fos_user_content %}
     {% endblock fos_user_content %}
 </div>
-{% block footer %}
-<script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
-{% endblock  %}
 {% endblock %}
+{% block footer %}
+    <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
+    <scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"></scirpt>
+
+{% endblock  %}
 </body>
 </html>

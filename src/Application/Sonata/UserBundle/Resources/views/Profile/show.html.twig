@@ -1,8 +1,6 @@
 {% extends "SonataUserBundle::layout.html.twig" %}
 {% block head %}
     {{ parent() }}
-    <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('bundles/app/js/jquery.min.js') }}"></script>
 {% endblock %}
 
 {% block container %}
@@ -16,21 +14,14 @@
             <div class="container">
                 <div class="page-title">
                     <div class="title_left">
-                        <ul class="nav nav-tabs bar_tabs">
-                            <li><a href="{{ path('sonata_user_security_logout') }}">logout</a>
-                            </li>
-                        </ul>
                         <h3>User Profile</h3>
                     </div>
 
-                    <div class="title_right">
-                        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for...">
-                                    <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                            </div>
+                    <div class="right">
+
+                                <form action="{{ path('sonata_user_security_logout') }}">
+                                    <input type="submit" value="Log out" class="exit-btn exit-btn-4">
+                                </form>
                         </div>
                     </div>
                 </div>
@@ -124,11 +115,11 @@
 
                                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
                                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Лаборатордук иштер </a>
+                                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab">Лаборатордук иштер </a>
                                             </li>
-                                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Projects Worked on</a>
+                                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab">Projects Worked on</a>
                                             </li>
-                                            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Profile</a>
+                                            <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab">Profile</a>
                                             </li>
                                         </ul>
                                         <div id="myTabContent" class="tab-content">
@@ -281,7 +272,6 @@
             </div>
         </div>
     </div>
-</div>
 
 <div id="custom_notifications" class="custom-notifications dsp_none">
     <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
@@ -289,17 +279,17 @@
     <div class="clearfix"></div>
     <div id="notif-group" class="tabbed_notifications"></div>
 </div>
-    {% block footer %}
+{% endblock %}
+{% block footer %}
 
-        <!-- footer content -->
-        <footer>
-            <div class="container">
-                <p class="pull-right">Gentelella Alela! a Bootstrap 3 template by <a>Kimlabs</a>. |
-                    <span class="lead"> <i class="fa fa-paw"></i> Gentelella Alela!</span>
-                </p>
-            </div>
-            <div class="clearfix"></div>
-        </footer>
-        {{ parent() }}
-    {% endblock %}
+    <!-- footer content -->
+    <footer>
+        <div class="container">
+            <p class="pull-right">Gentelella Alela! a Bootstrap 3 template by <a>Kimlabs</a>. |
+                <span class="lead"> <i class="fa fa-paw"></i> Gentelella Alela!</span>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+    {{ parent() }}
 {% endblock %}
