@@ -1809,16 +1809,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.18.1",
+            "version": "1.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45"
+                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
-                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/064b38c16790249488e7a8b987acf1c9d7383c09",
+                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09",
                 "shasum": ""
             },
             "require": {
@@ -1833,13 +1833,13 @@
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
                 "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
-                "swiftmailer/swiftmailer": "~5.3",
-                "videlalvaro/php-amqplib": "~2.4"
+                "swiftmailer/swiftmailer": "~5.3"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -1848,11 +1848,11 @@
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "raven/raven": "Allow sending log messages to a Sentry server",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
@@ -1883,7 +1883,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-03-13 16:08:35"
+            "time": "2016-04-02 13:12:58"
         },
         {
             "name": "nelmio/api-doc-bundle",
@@ -2327,34 +2327,35 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "4f36f433ec863a9c879f5420ccbf8d18c2373901"
+                "reference": "44265e2695143cdf315bf083c0e996596fd87ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/4f36f433ec863a9c879f5420ccbf8d18c2373901",
-                "reference": "4f36f433ec863a9c879f5420ccbf8d18c2373901",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/44265e2695143cdf315bf083c0e996596fd87ab6",
+                "reference": "44265e2695143cdf315bf083c0e996596fd87ab6",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.2",
                 "doctrine/inflector": "~1.0",
                 "knplabs/knp-menu-bundle": "^2.1.1",
-                "sonata-project/block-bundle": "~2.3,>=2.3.9",
+                "sonata-project/block-bundle": "^2.3.9",
                 "sonata-project/core-bundle": "^2.3.10",
                 "sonata-project/exporter": "~1.0",
                 "symfony/class-loader": "~2.3|~3.0",
                 "symfony/config": "^2.3.9|~3.0",
                 "symfony/console": "~2.3|~3.0",
-                "symfony/dependency-injection": "~2.3,>=2.3.3|~3.0",
+                "symfony/dependency-injection": "^2.3.3|~3.0",
                 "symfony/expression-language": "~2.4|~3.0",
-                "symfony/form": "~2.3|~3.0",
+                "symfony/form": "^2.3.5|~3.0",
                 "symfony/http-foundation": "~2.3|~3.0",
                 "symfony/property-access": "~2.3|~3.0",
                 "symfony/routing": "~2.3|~3.0",
                 "symfony/security-acl": "~2.3|~3.0",
                 "symfony/security-bundle": "~2.3|~3.0",
+                "symfony/templating": "~2.3|~3.0",
                 "symfony/translation": "~2.3|~3.0",
-                "symfony/twig-bridge": "~2.3|~3.0",
+                "symfony/twig-bridge": "^2.3.5|~3.0",
                 "symfony/validator": "~2.3|~3.0",
                 "twig/extensions": "~1.0",
                 "twig/twig": "~1.23"
@@ -2409,7 +2410,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2016-03-26 08:32:54"
+            "time": "2016-04-02 10:52:48"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2548,12 +2549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "41a82b8d0c6bbea95dbbd617ef0156b08e5002df"
+                "reference": "ee2ff39fb84a8a83554061588e76578eaae0424b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/41a82b8d0c6bbea95dbbd617ef0156b08e5002df",
-                "reference": "41a82b8d0c6bbea95dbbd617ef0156b08e5002df",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/ee2ff39fb84a8a83554061588e76578eaae0424b",
+                "reference": "ee2ff39fb84a8a83554061588e76578eaae0424b",
                 "shasum": ""
             },
             "require": {
@@ -2609,7 +2610,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2016-02-24 20:55:12"
+            "time": "2016-04-02 07:57:12"
         },
         {
             "name": "sonata-project/datagrid-bundle",

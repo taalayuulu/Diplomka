@@ -37,8 +37,10 @@
 </div>
 {% endblock %}
 {% block footer %}
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    {#<scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"></scirpt>#}
     <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
-    <scirpt src = "{{ asset('bundles/app/js/jquery.min.js') }}"></scirpt>
+
 
 {% endblock  %}
 </body>
