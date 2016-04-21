@@ -25,7 +25,7 @@ class PostAdmin extends Admin
                 'label' => 'Post Title'
             ))
             ->add('author', 'entity', array(
-                'class' => 'AppBundle\Entity\User'
+                'class' => 'Application\Sonata\UserBundle\Entity\User'
             ))
 
             // if no type is specified, SonataAdminBundle tries to guess it
