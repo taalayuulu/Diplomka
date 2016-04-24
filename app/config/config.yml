@@ -156,7 +156,7 @@ sonata_admin:
                 - OWNER
             acl_user_manager:     null
     title:  ФенМат
-    title_logo: bundles/sonataadmin/pmi.svg
+    title_logo: bundles/sonataadmin/logo_title.png
     options:
         html5_validate:       true
         sort_admins:          false
