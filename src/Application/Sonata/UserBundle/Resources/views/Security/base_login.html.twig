@@ -24,7 +24,7 @@
            {% block sonata_user_login_form %}
                            <form action="{{ path("fos_user_security_check") }}" method="post" role="form" class="form-horizontal">
                                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
-                               <img src="{{ asset('bundles/sonatauser/logo.png') }}" alt="login" class="manas">
+                               <img src="{{ asset('bundles/app/img/logo.png') }}" alt="login" class="manas">
                                <div class="form-group">
                                    <label for="username" class="col-sm-4 control-label">{##}{{ 'security.login.username'|trans({}, 'SonataUserBundle') }}</label>
                                    <div class="col-sm-8"><input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="username"/></div>
