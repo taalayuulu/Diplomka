@@ -21,3 +21,6 @@ contact:
     title: Contact
     tema: Contact info
 
+#books section
+book:
+    name: Books
