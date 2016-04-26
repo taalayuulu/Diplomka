@@ -24,3 +24,11 @@ contact:
 #books section
 book:
     name: Books
+
+plane:
+    title: Give us feedback
+    content: If you want to improve this website give us feedback
+
+source:
+    title: useful materials
+    content:

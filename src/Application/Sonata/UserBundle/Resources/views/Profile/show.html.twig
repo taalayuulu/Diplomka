@@ -1,6 +1,7 @@
 {% extends "SonataUserBundle::layout.html.twig" %}
 {% block head %}
     {{ parent() }}
+
 {% endblock %}
 
 {% block container %}
@@ -68,18 +69,7 @@
                                 </div>
                                 <div class="col-md-9 col-sm-9 col-xs-12">
 
-                                    <div class="profile_title">
-                                        <div class="col-md-6">
-                                            <h2>Колдонуучунун катталган датасы</h2>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div id="reportrange" class="pull-right" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED">
-                                                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                                <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- start of user-activity-graph -->
+                                    <!-- star of user-activity-graph -->
                                     <div id="graph_bar" style="width:100%; height:280px;">
                                         <div class="row">
                                             <img src="{{ asset('bundles/app/img/cplusplus.png') }}" alt="img">
@@ -92,7 +82,7 @@
                                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
                                             <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab">Лаборатордук иштер </a>
                                             </li>
-                                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab">Projects Worked on</a>
+                                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab">Китептер</a>
                                             </li>
                                             <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab">Profile</a>
                                             </li>
@@ -104,15 +94,19 @@
                                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                                     <div class="panel panel-default">
                                                         <div class="panel-heading" role="tab" id="headingOne">
+                                                            <div class=".col-md-8">
                                                             <h4 class="panel-title">
                                                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                                     1 - Лаборатордук иш
                                                                 </a>
                                                             </h4>
+                                                            </div>
+                                                            <div class=".col-md-4">
+                                                                <a href=" download={{ 'web/uploads/wordMetod_1_Лабораторная_работа_1.doc' }}"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                            </div>
                                                         </div>
                                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                                             <div class="panel-body">
-                                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                                             </div>
                                                         </div>
                                                     </div>

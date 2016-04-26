@@ -26,3 +26,12 @@ contact:
 #books section
 book:
     name: Китептер
+
+#why as section
+plane:
+    title: Бизге ой-пикирлериңизди жазыңыз
+    content: Сайтыбыздын өнүгүшү үчүн сиздердин ой пикирлериңизди күтөбүз
+
+source:
+    title: Материалдар
+    content: Жаңы материалдар менен таанышыңыз
